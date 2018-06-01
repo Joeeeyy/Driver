@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/tabs_home"
+        android:title="HOME"
+        android:icon="@drawable/home"/>
+
+    <item android:id="@+id/tabs_earnings"
+        android:title="EARNINGS"
+        android:icon="@drawable/earning"/>
+
+    <item android:id="@+id/tabs_ratings"
+        android:title="RATINGS"
+        android:icon="@drawable/star_ratings"/>
+
+    <item android:id="@+id/tabs_account"
+        android:title="ACCOUNT"
+        android:icon="@drawable/account"/>
+
+</menu>
