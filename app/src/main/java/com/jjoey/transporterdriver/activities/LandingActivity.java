@@ -31,7 +31,7 @@ public class LandingActivity extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= 23) {
             checkPerms();
         } else {
-
+            startActivity(new Intent(LandingActivity.this, AuthActivity.class));
         }
 
     }
@@ -55,14 +55,10 @@ public class LandingActivity extends AppCompatActivity {
                     landing_progress.setVisibility(View.GONE);
                     startActivity(new Intent(LandingActivity.this, AuthActivity.class));
                 } else {
-                    finish();
-                    moveTaskToBack(true);
+                    ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, AppConstants.LOC_PERM_CODE);
                 }
                 break;
         }
     }
 
-    private void trackLocation() {
-
-    }
 }
