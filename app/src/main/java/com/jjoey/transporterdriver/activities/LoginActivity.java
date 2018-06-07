@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.jjoey.transporterdriver.R;
 
@@ -15,8 +17,9 @@ public class LoginActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private ImageView backIV;
-    private TextInputEditText emailTET, pwdTET;
-    private Button loginBtn, forgotPwdBtn;
+    private TextView forgotPwdTV;
+    private EditText emailET, passET;
+    private Button loginBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +40,9 @@ public class LoginActivity extends AppCompatActivity {
     private void initViews() {
         toolbar = findViewById(R.id.toolbar);
         backIV = findViewById(R.id.backIV);
-        emailTET = findViewById(R.id.emailTET);
-        pwdTET = findViewById(R.id.pwdTET);
+        emailET = findViewById(R.id.emailET);
+        passET = findViewById(R.id.passET);
         loginBtn = findViewById(R.id.loginBtn);
-        forgotPwdBtn = findViewById(R.id.forgotPwdBtn);
+        forgotPwdTV = findViewById(R.id.forgotPwdTV);
     }
 }

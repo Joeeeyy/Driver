@@ -27,5 +27,6 @@
     <string name="enter_drop_location">Drop Location</string>
     <string name="phone_textview">To Commence Your Driver Experience, Kindly Input Your Correct Phone Number with Proper Country Code</string>
     <string name="driver_register">Register as Driver</string>
+    <string name="forgot_pwd_tv">Forgot Password?</string>
 
 </resources>
