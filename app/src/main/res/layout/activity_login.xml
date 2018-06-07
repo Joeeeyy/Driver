@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/bluish"
                 android:inputType="textPassword"
-                android:hint="@string/pwd_hint"
+                android:hint="@string/password_hint"
                 android:textColorHint="@color/bluish"
                 android:fontFamily="monospace"/>
 

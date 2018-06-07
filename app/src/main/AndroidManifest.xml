@@ -35,7 +35,8 @@
         <activity android:name=".activities.LandingActivity" />
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.AuthActivity" />
-        <activity android:name=".activities.RegisterActivity"></activity>
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.PhoneNumberActivity"></activity>
     </application>
 
 </manifest>

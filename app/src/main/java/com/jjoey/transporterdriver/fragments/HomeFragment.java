@@ -35,6 +35,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -60,8 +61,8 @@ public class HomeFragment extends BaseFragment implements OnMapReadyCallback {
     public static double latitude = 0f, longitude = 0f;
     private static boolean isLocationGranted = false;
 
-    public static final int UPDATE_INTERVAL = 15000;
-    public static final int FASTEST_INTERVAL = 8000;
+    public static final int UPDATE_INTERVAL = 8000;
+    public static final int FASTEST_INTERVAL = 5000;
     public static final int DISPLACEMENT = 10;
 
     public static final int PLAY_SERVICES_REQ_CODE = 9009;
@@ -205,7 +206,7 @@ public class HomeFragment extends BaseFragment implements OnMapReadyCallback {
             MarkerOptions options = new MarkerOptions();
             options.position(new LatLng(latitude, longitude));
             options.title("Driver");
-            //options.icon(BitmapDescriptorFactory.fromResource(R.drawable.car)); // throws error
+            options.icon(BitmapDescriptorFactory.fromResource(R.drawable.car)); // throws error
 
             currentMarker = mGmap.addMarker(options);
             rotateMarker(currentMarker, 360, mGmap);

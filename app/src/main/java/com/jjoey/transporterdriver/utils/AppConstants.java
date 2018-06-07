@@ -4,12 +4,12 @@ public class AppConstants {
 
     public static final int PLAY_SERVICES_RESOLUTION_REQUEST = 40023;
     public static final int LOC_PERM_CODE = 1203;
-    public static int PERM_LOC_CODE = 1302;
 
     /**
      * Database References
      */
-    public static String DRIVERS_REF = "/Driver";
+    public static String DRIVERS_REF = "/Drivers";
+    public static String USERS_REF = "/Users";
 
     /**
      * Storage References

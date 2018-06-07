@@ -7,7 +7,7 @@
 
     <item android:id="@+id/tabs_earnings"
         android:title="EARNINGS"
-        android:icon="@drawable/earning"/>
+        android:icon="@drawable/earning_new"/>
 
     <item android:id="@+id/tabs_ratings"
         android:title="RATINGS"

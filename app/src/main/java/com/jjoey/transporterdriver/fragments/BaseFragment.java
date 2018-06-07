@@ -21,7 +21,7 @@ public class BaseFragment extends Fragment {
     private static final String TAG = BaseFragment.class.getSimpleName();
 
     public static FirebaseAuth mAuth;
-    public static DatabaseReference driversRef;
+    public static DatabaseReference driversRef, usersRef;
     public static StorageReference sRef, imagesRef, vehiclesRef;
     public static GeoFire geoFire;
 
@@ -30,6 +30,9 @@ public class BaseFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         mAuth = FirebaseAuth.getInstance();
+
+        usersRef = FirebaseDatabase.getInstance().getReference(AppConstants.USERS_REF);
+        usersRef.keepSynced(true);
 
         driversRef = FirebaseDatabase.getInstance().getReference(AppConstants.DRIVERS_REF);
         driversRef.keepSynced(true);

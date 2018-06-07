@@ -5,12 +5,27 @@
     <string name="google_maps_key">AIzaSyBHB7IhgyG56XRFOrO7ta2buraNMyc4EIM</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
-    <string name="pwd_hint">Password</string>
-    <string name="email_hint">Email</string>
+
+    <string name="phone_num_hint">Phone number</string>
+    <string name="country_code_hint">Country Code</string>
+    <string name="get_otp">Get OTP</string>
+
+    <!--<string name="letters_only">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>-->
+    <string name="letters_only"></string>
+    <string name="email_only">abcdefghijklmnopqrstuvwxyzzABCDEFGHIJKLMNOPQRSTUVWXYZ.0123456789@</string>
+    <string name="password_only">abcdefghijklmnopqrstuvwxyzzABCDEFGHIJKLMNOPQRSTUVWXYZ._0123456789</string>
+
+    <string name="continue_login_text"><![CDATA[Continue & Login]]></string>
+    <string name="full_name_hint">Full Name</string>
+    <string name="email_hint">Email Id</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="enter_pickup_location">Pickup Location</string>
     <string name="enter_drop_location">Drop Location</string>
+    <string name="phone_textview">To Commence Your Driver Experience, Kindly Input Your Correct Phone Number with Proper Country Code</string>
+    <string name="driver_register">Register as Driver</string>
 
 </resources>

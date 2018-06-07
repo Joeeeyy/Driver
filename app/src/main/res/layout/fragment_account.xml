@@ -1,14 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.AccountFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?android:attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/driverStatusTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Offline"
+                android:textSize="20sp"
+                android:textColor="@color/gray"
+                android:fontFamily="sans-serif"
+                android:layout_centerVertical="true"/>
+
+            <com.github.glomadrian.materialanimatedswitch.MaterialAnimatedSwitch
+                android:id="@+id/statusSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:background="@color/gray">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/profileMetaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileCIV"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/home"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    app:civ_border_color="@color/otp_gray"
+                    app:civ_border_width="1dp"
+                    android:layout_marginTop="26dp"/>
+                
+                <TextView
+                    android:id="@+id/profileNameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="UBER DRIVER"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:layout_below="@id/profileCIV"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/editProfileTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EDIT"
+                    android:textAllCaps="true"
+                    android:textColor="@color/bluish"
+                    android:fontFamily="serif-monospace"
+                    android:layout_below="@id/profileNameTV"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="26dp"/>
+
+            <RelativeLayout
+                android:id="@+id/carMetaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/carImg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/car"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    app:civ_border_color="@color/otp_gray"
+                    app:civ_border_width="1dp"
+                    android:layout_marginTop="26dp"/>
+
+                <TextView
+                    android:id="@+id/carNameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="TOYOTA COROLLA"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:layout_below="@id/carImg"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/changeCarTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHANGE"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/bluish"
+                    android:fontFamily="serif-monospace"
+                    android:layout_below="@id/carNameTV"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:background="@color/white">
+
+            <com.andexert.expandablelayout.library.ExpandableLayout
+                android:id="@+id/driverProfileEL"
+                xmlns:expandable="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                expandable:el_headerLayout="@layout/driver_profile_header_layout"
+                expandable:el_contentLayout="@layout/driver_profile_content_layout"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

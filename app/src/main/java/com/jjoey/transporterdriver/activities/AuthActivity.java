@@ -30,6 +30,7 @@ public class AuthActivity extends AppCompatActivity {
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //startActivity(new Intent(AuthActivity.this, PhoneNumberActivity.class));
                 //startActivity(new Intent(AuthActivity.this, RegisterActivity.class));
                 startActivity(new Intent(AuthActivity.this, DriverHomeActivity.class));
             }
