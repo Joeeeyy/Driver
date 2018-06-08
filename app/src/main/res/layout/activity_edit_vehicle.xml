@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditVehicleActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This view will be to edit vehicle details like driver's license, vehicle image, license plates, expiry, etc...I have not thought of how to design this yet"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>

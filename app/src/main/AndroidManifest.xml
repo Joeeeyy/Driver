@@ -36,7 +36,11 @@
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.AuthActivity" />
         <activity android:name=".activities.RegisterActivity" />
-        <activity android:name=".activities.PhoneNumberActivity"></activity>
+        <activity android:name=".activities.PhoneNumberActivity" />
+        <activity android:name=".activities.VerifyOTPActivity" />
+        <activity android:name=".activities.DriverProfileActivity" />
+        <activity android:name=".activities.EditProfileActivity" />
+        <activity android:name=".activities.EditVehicleActivity"></activity>
     </application>
 
 </manifest>

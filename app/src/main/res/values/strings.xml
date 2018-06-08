@@ -10,10 +10,21 @@
     <string name="country_code_hint">Country Code</string>
     <string name="get_otp">Get OTP</string>
 
+    <string-array name="countries">
+        <!--<item>Philippines +63</item>-->
+        <item>Romania +40</item>
+    </string-array>
+
+    <string name="otp_prompt_tv">Enter One Time Password</string>
+    <string name="otp_info_tv">One Time Password (OTP) has been sent to your phone number. Please enter the same here to login.</string>
+    <string name="otp_continue_text">Continue</string>
+    <string name="resend_code">Resend Code</string>
+
     <!--<string name="letters_only">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>-->
     <string name="letters_only"></string>
     <string name="email_only">abcdefghijklmnopqrstuvwxyzzABCDEFGHIJKLMNOPQRSTUVWXYZ.0123456789@</string>
     <string name="password_only">abcdefghijklmnopqrstuvwxyzzABCDEFGHIJKLMNOPQRSTUVWXYZ._0123456789</string>
+    <string name="phone_only">0123456789</string>
 
     <string name="continue_login_text"><![CDATA[Continue & Login]]></string>
     <string name="full_name_hint">Full Name</string>
@@ -28,5 +39,10 @@
     <string name="phone_textview">To Commence Your Driver Experience, Kindly Input Your Correct Phone Number with Proper Country Code</string>
     <string name="driver_register">Register as Driver</string>
     <string name="forgot_pwd_tv">Forgot Password?</string>
+    <string name="bio_data">Bio Data</string>
+    <string name="dob_hint">Date of Birth</string>
+    <string name="emergency_con_name_hint">Name of Contact</string>
+    <string name="next">NEXT</string>
+    <string name="emergency_con_phone_hint">Contact Phone Number</string>
 
 </resources>

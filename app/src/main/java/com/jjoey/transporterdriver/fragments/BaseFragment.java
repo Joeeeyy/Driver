@@ -22,7 +22,7 @@ public class BaseFragment extends Fragment {
 
     public static FirebaseAuth mAuth;
     public static DatabaseReference driversRef, usersRef;
-    public static StorageReference sRef, imagesRef, vehiclesRef;
+    public static StorageReference sRef, driverImagesRef, vehiclesRef;
     public static GeoFire geoFire;
 
     @Override
@@ -40,7 +40,7 @@ public class BaseFragment extends Fragment {
         geoFire = new GeoFire(driversRef);
 
         sRef = FirebaseStorage.getInstance().getReference(AppConstants.STORAGE_REF);
-        imagesRef = FirebaseStorage.getInstance().getReference(AppConstants.PROFILE_IMAGES);
+        driverImagesRef = FirebaseStorage.getInstance().getReference(AppConstants.DRIVER_PROFILE_IMAGES);
         vehiclesRef = FirebaseStorage.getInstance().getReference(AppConstants.VEHICLE_IMAGE);
 
     }

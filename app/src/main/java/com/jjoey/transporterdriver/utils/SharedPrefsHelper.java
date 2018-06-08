@@ -15,8 +15,6 @@ public class SharedPrefsHelper {
     public static final String KEY_ACCOUNT_PREFS = "driverHasAccount";
     public static final String HAS_ACCOUNT = "driverAccount";
 
-    private boolean value;
-
     public SharedPrefsHelper(Context context) {
         this.context = context;
 
